@@ -1,4 +1,4 @@
-const POST_URL = "WEBBHOOK URL";
+const POST_URL = "https://discord.com/api/webhooks/1358456519644938350/pfmMLAZfkI6cZfTpxElz9yOpZHVzaCoJWw2j4MlFZT3Ly1RcId6sLxr9d25xG2r-0Wlf";
 
 function onSubmit(e) {
     const response = e.response.getItemResponses();
@@ -42,13 +42,14 @@ function onSubmit(e) {
             "Content-Type": "application/json",
         },
         "payload": JSON.stringify({
-            "content": "‌",
+            "content": "‌<@&872460678936530984> \n > :thumbsup: = Accept \n > :thumbsdown: = Deny \n > :white_large_square: = Neutral \n > :french_bread: = Abstain",
             "embeds": [{
-                "title": "Some nice title here",
-                "color": 33023, // This is optional, you can look for decimal colour codes at https://www.webtoolkitonline.com/hexadecimal-decimal-color-converter.html
+                "title": "GLE Application",
+                "color": 9016E8, // This is optional, you can look for decimal colour codes at https://www.webtoolkitonline.com/hexadecimal-decimal-color-converter.html
                 "fields": items,
+                "url": "https://docs.google.com/forms/d/18JeJeHGBSljGcmJr0JKIHAWbUjtUnaZP493BKN13IQM/edit#settings",
                 "footer": {
-                    "text": "Some footer here"
+                    "text": "The Backrooms Wiki"
                 },
                 "timestamp": new Date().toISOString()
             }]
